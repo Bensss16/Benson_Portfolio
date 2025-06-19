@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benson Liu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Benson Liu</h1>
+    <p>Student • Data Science </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a high school student passionate about data science, cybersecurity, and technology. I’ve developed tools to help elders stay safe online and tried to compete in data science competitions(although had not suceed yet)
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>URL Threat Detection Bot</h3>
+      <p>
+        A Line bot that uses Checkpoint's Threat Cloud API to evaluate link safety in real-time, aimed at protecting older users from scams.
+        
+      </p>
+    </div>
+    <div class="project">
+      <h3>AI-based Cybersecurity Research</h3>
+      <p>
+        Contributed to AI-driven threat response methods as part of a research team, presented findings at IEEE DSC 2025.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="return showThanks();">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="thanks-message" style="display:none;">Thanks for your message!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Benson Liu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
