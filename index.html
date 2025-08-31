@@ -62,7 +62,8 @@
     <li>Asia Pacific ICT Alliance Awards — Finalist (Dec 2023)</li>
   </ul>
 </section>
-  <section id="projects">
+
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="project">
@@ -86,7 +87,7 @@
     </p>
   </div>
 
-     <div class="project">
+  <div class="project">
     <h3>Project 3: Data Science Competitions</h3>
     <h4>Bitgrit Weather Forecast Challenge</h4>
     <p>
@@ -98,23 +99,66 @@
       </a>
     </p>
   </div>
+
+  <div class="project">
+    <h3>Project 4: YOLO Real-Time Object Detection Models</h3>
+    <p>
+      Developed multiple YOLO-based object detection pipelines for real-world applications.  
+      Click below to view demo videos hosted on Google Drive:
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://drive.google.com/file/d/1eOcJeWgtb0Ofb-CWggtIUBOPkanfpXwI/view?usp=sharing" target="_blank">
+          🎥 YOLO Demo Video 1 — Real-time detection of people waiting at a counter
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1FF3TtvB02dpqkve_g2iZom6pvxkEMDwN/view?usp=sharing" target="_blank">
+          🎥 YOLO Demo Video 2 — Body structure detection & tracking
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1vrmw2HTaZyp8QbWJ7yr6rSPtzmagLsV_/view?usp=sharing" target="_blank">
+          🎥 YOLO Demo Video 3 — License-plate pipeline (Layer 1: car detection)
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1kzBfWE5Y1xVfv-zT_s7CJScpMsAXh_xe/view?usp=sharing" target="_blank">
+          🎥 YOLO Demo Video 4 — License-plate pipeline (Layer 2: plate detection)
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1kzBfWE5Y1xVfv-zT_s7CJScpMsAXh_xe/view?usp=sharing" target="_blank">
+          🎥 YOLO Demo Video 5 — End-to-end license plate recognition
+        </a>
+        <p>The final model is a three-layer pipeline that combines detection with OCR:</p>
+        <ol>
+          <li><strong>Layer 1 — Car detection (YOLO):</strong> Detects cars in the frame and programmatically crops/zooms to each car.</li>
+          <li><strong>Layer 2 — Plate detection (YOLO):</strong> Finds the license plate within the cropped car image and grabs a clean plate patch (screenshot/crop).</li>
+          <li><strong>Layer 3 — OCR (InternVL3):</strong> Sends the plate patch to InternVL3 (OCR) to read and output the exact symbols on the plate.</li>
+        </ol>
+        <p>This layered approach enables accurate, real-time end-to-end recognition from car → plate → characters.</p>
+      </li>
+    </ul>
+  </div>
 </section>
   
-  <section id="contact">
-    <h2>Contact</h2>
-    <form onsubmit="return showThanks();">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="thanks-message" style="display:none;">Thanks for your message!</p>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <form onsubmit="return showThanks();">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p id="thanks-message" style="display:none;">Thanks for your message!</p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Benson Liu</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Benson Liu</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
